@@ -22,7 +22,7 @@ def search_package(package_name):
         items = []
 
         for package in packages_items:
-            name = package.find('.packages-title', first=True).text
+            name = package.find('.packages-title a', first=True).text
             descriptions = package.find('.packages-metadata-block', first=True)
             likes = safe_text_parse('.packages-score-like', package)
             pub_points = safe_text_parse('.packages-score-health', package)
@@ -37,7 +37,7 @@ def search_package(package_name):
             # more_title = likes_text + pub_points_text + popularity_text
 
             items.append(Package(
-                package_name=package_name,
+                package_name=name,
                 clipboard_text=get_clipboard(name, latest_version), description=descriptions,
                 more_title='',
             ))
