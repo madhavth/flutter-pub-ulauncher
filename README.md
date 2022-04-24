@@ -1,15 +1,12 @@
 # Ulauncher Flutter pub.dev Extension
 
 > Ulauncher extension that gets package info from flutter pub.dev website and displays it.
+> select a package then press enter to copy to clipboard or press alt-enter to open webpage
 
 [![Ulauncher Extension](https://img.shields.io/badge/Ulauncher-Extension-yellowgreen.svg?style=for-the-badge)](https://ext.ulauncher.io/)
 [![CI Status](https://img.shields.io/github/workflow/status/brpaz/ulauncher-faker/CI?color=orange&label=actions&logo=github&logoColor=orange&style=for-the-badge)](https://github.com/brpaz/ulauncher-faker)
 [![License](https://img.shields.io/github/license/brpaz/ulauncher-faker.svg?style=for-the-badge)](https://github.com/brpaz/ulauncher-faker/blob/master/LICENSE)
 
-
-## Demo
-
-![demo](demo.gif)
 
 ## Requirements
 
@@ -22,17 +19,18 @@
 Open ulauncher preferences window -> extensions -> add extension and paste the following url:
 
 ```
-https://github.com/madhavth/Ulauncher-QFX
+https://github.com/madhavth/flutter-pub-ulauncher
 ```
 
 ## Usage
 
 To use this extension just type **pub** on Ulauncher input box and type package name to see its info and version.
+select a package then press enter to copy to clipboard or press alt-enter to open webpage
 
 ## Development
 
 ```
-git clone https://github.com/madhavth/Ulauncher-QFX
+git clone https://github.com/madhavth/flutter-pub-ulauncher
 make link
 ```
 
@@ -55,7 +53,7 @@ Contributions are what make the open source community such an amazing place to b
 If this project was useful to you in some form, I would be glad to have your support.  
 It will help to keep the project alive and to have more time to work on Open Source.
 
-The sinplest form of support is to give a ⭐️ to this repo.
+The sinplest form of support is to give a  ⭐️ to this repo.
 
 You can also contribute with [GitHub Sponsors](https://github.com/sponsors/madhavth).
 

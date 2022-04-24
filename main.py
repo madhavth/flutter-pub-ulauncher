@@ -6,6 +6,7 @@ from ulauncher.api.client.EventListener import EventListener
 from ulauncher.api.client.Extension import Extension
 from ulauncher.api.shared.action.CopyToClipboardAction import CopyToClipboardAction
 from ulauncher.api.shared.action.HideWindowAction import HideWindowAction
+from ulauncher.api.shared.action.OpenUrlAction import OpenUrlAction
 from ulauncher.api.shared.action.RenderResultListAction import RenderResultListAction
 from ulauncher.api.shared.event import KeywordQueryEvent
 from ulauncher.api.shared.item.ExtensionResultItem import ExtensionResultItem
@@ -37,17 +38,23 @@ class QFXExtension(Extension):
                     icon='images/icon.png',
                     name=output,
                     highlightable=False,
-                    on_enter=HideWindowAction()
+                    on_enter=HideWindowAction(),
                 )
             ])
 
         items = []
-        for result in results[:20]:
+        for result in results[:5]:
             items.append(
                 ExtensionResultItem(
                     icon='images/icon.png',
-                    name=result.package_name,
-                    on_enter=CopyToClipboardAction(result.package_name)))
+                    name=result.package_name + result.more_title,
+                    description=result.description.text,
+                    on_enter=CopyToClipboardAction(result.clipboard_text),
+                    on_alt_enter=OpenUrlAction(url=result.url)
+                ),
+            )
+
+        return RenderResultListAction(items)
 
 
 # def list_providers(self, query):

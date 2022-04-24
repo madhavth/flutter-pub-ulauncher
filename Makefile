@@ -1,5 +1,5 @@
 
-EXT_NAME:=com.github.madhavth.ulauncher-qfx
+EXT_NAME:=com.github.madhavth.ulauncher-flutter-pub
 EXT_DIR:=$(shell pwd)
 
 .PHONY: help lint format link unlink deps dev setup
