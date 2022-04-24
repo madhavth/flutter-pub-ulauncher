@@ -1,0 +1,18 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Flutter pub.dev packages",
+  "description": "search and copy pub.dev packages latest version",
+  "developer_name": "Madhav Thapa",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.3
+  },
+  "preferences": [
+    {
+      "id": "madhavth_flutter_pub_dev",
+      "type": "keyword",
+      "name": "Flutter Package",
+      "default_value": "pub"
+    }
+  ]
+}
