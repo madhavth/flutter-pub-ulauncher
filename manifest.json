@@ -5,11 +5,11 @@
   "developer_name": "Madhav Thapa",
   "icon": "images/icon.png",
   "options": {
-    "query_debounce": 0.3
+    "query_debounce": 0.1
   },
   "preferences": [
     {
-      "id": "madhavth_flutter_pub_dev",
+      "id": "madhavth_flutter_pub_dev_v1",
       "type": "keyword",
       "name": "Flutter Package",
       "default_value": "pub"
