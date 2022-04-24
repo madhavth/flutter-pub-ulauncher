@@ -43,7 +43,7 @@ class QFXExtension(Extension):
             ])
 
         items = []
-        for result in results[:5]:
+        for result in results[:10]:
             items.append(
                 ExtensionResultItem(
                     icon='images/icon.png',
